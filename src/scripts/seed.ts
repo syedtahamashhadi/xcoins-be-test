@@ -5,7 +5,7 @@ import { SimulatorSchema } from "../simulator/schemas/simulator.schema";
 import { FavouriteSchema } from "../favourite/schemas/favourite.schema";
 
 (async () => {
-  mongoose.connect("YOUR_MONGO_URI")
+  mongoose.connect("mongodb+srv://taha:cQIpWJgNedBncJNe@cluster0.dmtfs.mongodb.net/xcoins?retryWrites=true&w=majority")
 
   const Profile = mongoose.model("Profile", ProfileSchema);
   const profile = new Profile({
